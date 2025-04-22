@@ -4,6 +4,9 @@
     <title>Login Page</title>
 </head>
 <body>
+    <div style="display: flex; justify-content: center; padding: 20px; align-items: flex-start;">
+    
+        <div style="width: 45%; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
     <h2>Login Form</h2>
 
     <form>
@@ -14,6 +17,27 @@
         <input type="password" id="password" name="password"><br><br>
 
         <input type="submit" value="Login">
+        <p>Don't have an account? <a href="#signup-form">Sign up here</a></p>
+        </form>
+        
+        <hr>
+
+    <h2>Sign Up Form</h2>
+    <div id="signup-form" style="width: 45%; padding: 20px; border-radius: 8px; margin-left: 20px;"></div>
+
+    <form>
+        <label for="signup-name">Name:</label><br>
+        <input type="text" id="signup-name" name="signup-name"><br><br>
+
+        <label for="signup-userid">User ID:</label><br>
+        <input type="text" id="signup-userid" name="signup-userid"><br><br>
+
+        <label for="signup-password">Password:</label><br>
+        <input type="password" id="signup-password" name="signup-password"><br><br>
+
+        <input type="submit" value="Sign Up">
+
     </form>
+    <p>Already have an account? <a href="#login-form">Log in here</a></p>
 </body>
 </html>
